@@ -1052,7 +1052,12 @@ fieldset[disabled] a.btn {
   text-shadow: none;
   box-shadow: none;
 }
-
+.blue-var{
+  background-color: #7d99b3 !important;
+}
+.blue-var:hover{
+  background-color: #687e93 !important;
+}
 .btn.btn-outline-dark:hover::after,
 .btn.btn-outline-light:hover::after {
   background-color: transparent;
