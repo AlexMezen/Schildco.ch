@@ -284,12 +284,31 @@ h6.light,
 
 /* text white */
 .text-white {
+  position: relative;
   --heading-color: var(--bs-light);
   --bs-breadcrumb-item-active-color: var(--bs-light);
   --bs-breadcrumb-divider-color: var(--bs-light);
   --bs-link-color-rgb: var(--bs-light-rgb);
   --bs-link-hover-color-rgb: var(--bs-light-rgb);
 }
+
+.text-white::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text-white:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
 
 .text-white .nav-link {
   --bs-nav-link-color: var(--bs-light);
@@ -1548,7 +1567,7 @@ This is main CSS file that contains custom style rules used in this template
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -1559,16 +1578,21 @@ This is main CSS file that contains custom style rules used in this template
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 .nav-btn-active {
   color: #f3ad75; /* Измените цвет текста на активной кнопке */
   background-color: #ddd; /* Измените фон активной кнопки */
 }
-
 
 .gallery-product {
   width: 100%;
@@ -1655,6 +1679,25 @@ This is main CSS file that contains custom style rules used in this template
 --------------------------------------------------------------*/
 header .main-logo {
   position: relative;
+}
+.main-logo {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.803);
+  padding: 40px;
+  transition: 0.5s all ease-out;
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+}
+.main-logo a {
+  font-family: "playfair display", Georgia, serif;
+  font-size: 2em;
+  color: #fff;
+  margin: 0 auto;
+  transition: 0.5s all ease-out;
+  margin-left: -5px;
 }
 header {
   position: absolute;
@@ -1889,13 +1932,13 @@ header.sticky #navbar ul.menu-list > li > a {
 .side-nav-bar #menu-toggle:checked ~ .menu-btn > span::before {
   top: 0;
   transform: rotate(0);
-  background: #f6f6f6;
+  background: #ffffffdc;
 }
 
 .side-nav-bar #menu-toggle:checked ~ .menu-btn > span::after {
   top: 0;
   transform: rotate(90deg);
-  background: #f6f6f6;
+  background: #ffffffdc;
 }
 
 .side-nav-bar #menu-toggle:checked ~ .side-nav-menu {
@@ -1910,6 +1953,8 @@ header.sticky #navbar ul.menu-list > li > a {
   margin: 30px;
   display: block;
   width: 30px;
+  background: #6a6a6a;
+  border-radius: 10px;
 }
 
 .side-nav-bar .menu-btn {
@@ -1935,9 +1980,10 @@ header.sticky #navbar ul.menu-list > li > a {
   display: block;
   position: absolute;
   width: 100%;
-  height: 2px;
-  background-color: #f6f6f6;
+  height: 3px;
+  background-color: #fdb87f;
   transition-duration: 0.25s;
+  border-width: 10px;
 }
 
 .side-nav-bar .menu-btn > span::before {
@@ -1974,9 +2020,9 @@ header.sticky #navbar ul.menu-list > li > a {
 .nav-overlay:after {
   content: "";
   position: fixed;
-  width: 100vw;
+  width: 20%;
   height: 100vh;
-  background: rgba(20, 21, 26, 0.6);
+  background: rgba(255, 255, 255, 0.799);
   border-bottom-left-radius: 200%;
   z-index: -1;
   -webkit-transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s,
@@ -1993,8 +2039,8 @@ header.sticky #navbar ul.menu-list > li > a {
 }
 
 .nav-overlay:after {
-  background: rgba(9, 9, 12, 1);
-  background: var(--dark-color);
+  background: rgba(255, 255, 255, 0.799);
+  background: rgba(255, 255, 255, 0.799);
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
@@ -2013,7 +2059,28 @@ header.sticky #navbar ul.menu-list > li > a {
   transform: translate(0%, -50%);
   width: 100%;
 }
-
+@media screen and (max-width: 768px) {
+  .nav__content {
+    position: fixed;
+    top: 40%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(150%, -50%);
+    width: 50%;
+    padding-left: 0px !important;
+  }
+  .nav__block-item {
+    width: 43%;
+    font-size: 16px !important;
+  }
+  .text-white {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 462px) {
+  .text-white {
+    margin-left: -15px;
+  }
+}
 .nav__list {
   position: relative;
   padding: 0;
@@ -2133,7 +2200,7 @@ body.nav-active .nav-overlay {
 body.nav-active .nav-overlay:before,
 body.nav-active .nav-overlay:after {
   -webkit-transform: translateX(0%) translateY(0%);
-  transform: translateX(0%) translateY(0%);
+  transform: translateX(400%) translateY(0%);
   border-radius: 0;
 }
 
@@ -2225,6 +2292,9 @@ body.nav-active .nav__list-item:nth-child(10) {
   opacity: 0;
   transform: translate(100px, 0%);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  width: 50%;
+  font-size: 25px;
+  margin-top: -20px;
 }
 
 .nav__block .nav__block-item:nth-child(1) {
@@ -2340,7 +2410,7 @@ body.nav-active .nav__block .nav__block-item {
   font-family: var(--heading-font);
   font-size: 2em;
   font-weight: 900;
-  color: #3CBC8D;
+  color: #3cbc8d;
   text-transform: uppercase;
   text-align: center;
 }
@@ -2365,9 +2435,9 @@ body.nav-active .nav__block .nav__block-item {
   margin-bottom: 5px;
 }
 
-.form-group input[type=text],
-.form-group input[type=email],
-.form-group input[type=tel] {
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -2380,7 +2450,7 @@ body.nav-active .nav__block .nav__block-item {
   margin-bottom: 5px;
 }
 
-.form-checkbox input[type=checkbox] {
+.form-checkbox input[type="checkbox"] {
   margin-right: 10px;
 }
 
@@ -2389,7 +2459,7 @@ body.nav-active .nav__block .nav__block-item {
   padding: 15px;
   border: none;
   border-radius: 4px;
-  background-color: #3CBC8D;
+  background-color: #3cbc8d;
   color: #fff;
   font-family: var(--heading-font);
   font-size: 1.5em;
@@ -3361,12 +3431,11 @@ footer#footer {
   cursor: pointer;
 }
 
-
 .post-grid .post-item .post-title {
   font-size: 1.4em;
   line-height: 1.4;
 }
-.post-grid .post-item .post-title:hover{
+.post-grid .post-item .post-title:hover {
   color: #2f2f2f;
 }
 .post-grid .post-item .meta-date {
