@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
-	<title>Archi - Free Architecture Portfolio HTML Template</title>
+	<title>Schildco</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,8 +28,9 @@
 <body>
 
 	<div class="preloader"></div>
+	<button onclick="topFunction()" style="background-color: rgb(164, 216, 255);" id="myBtn" title="Go to top">⬆</button>
 
-	<div class="nav nav-overlay">
+	<!-- <div class="nav nav-overlay">
 		<div class="nav__content">
 			<div class="container">
 				<div class="row p-4 p-md-0 flex-column-reverse flex-md-row g-md-5 nav__block">
@@ -95,18 +96,38 @@
 			</div>
 
 		</div>
-	</div>
+	</div> -->
+	<div id="header">
+		<div id="logo">LOGO</div>
+		<nav id="navbar">
+		  <a href="index.html"><b>Home</b></a>
+		  <a href="test2.html"><b>Prodotti</b></a>
+		  <a href="test3.html"><b>About us</b></a>
 
-	<div class="main-logo">
-		<a href="index.html">A.</a>
-	</div>
+		</nav>
+</div>
+<div class="menu-btn">
+	<span></span>
+	<span></span>
+	<span></span>
+  </div>
+  
+  <div class="side-menu">
+	<a class="text-color-my" href="index.html"><b>Home</b></a>
+	<a class="text-color-my" href="test2.html"><b>Prodotti</b></a>
+	<a class="text-color-my" href="test3.html"><b>About us</b></a>
+  </div>
+	  
+	
+	
 
-	<div class="side-nav-bar">
+
+	<!-- <div class="side-nav-bar">
 		<input id="menu-toggle" type="checkbox" />
 		<label class="menu-btn" for="menu-toggle">
 			<span></span>
 		</label>
-	</div>
+	</div> -->
 
 	<section id="intro" class="scrollspy-section">
 		<div class="main-slider">
@@ -142,10 +163,10 @@
 		</div><!--slider-->
 
 		<div class="button-container">
-			<button class="prev slick-arrow">
+			<button class="prev slick-arrow btn-var1">
 				<i class="icon icon-chevron-thin-left"></i>
 			</button>
-			<button class="next slick-arrow">
+			<button class="next slick-arrow btn-var1">
 				<i class="icon icon-chevron-thin-right"></i>
 			</button>
 		</div>
@@ -185,7 +206,7 @@
 						Viverra senectus dui ultricies dolor.</p>
 
 					<div class="btn-wrap">
-						<a href="#" class="btn btn-accent btn-xlarge btn-rounded">View my portfolio</a>
+						<a href="#" class="btn btn-accent btn-xlarge btn-rounded btn-var1">View my portfolio</a>
 					</div>
 
 				</div>
@@ -195,7 +216,7 @@
 		</div>
 	</section>
 
-	<section id="portfolio" style="background-color: whitesmoke !important;" class="scrollspy-section bg-dark padding-large">
+	<section id="portfolio" style="background-color: rgb(173, 197, 230) !important;" class="scrollspy-section bg-dark padding-large">
 		<div class="container">
 
 			<div class="row">
@@ -210,139 +231,36 @@
 				</div>
 			</div>
 
-			<div class="row">
-
-				<div id="filters" class="button-group d-flex flex-wrap gap-4 py-5" data-aos="fade-up">
-					<a href="#" class="btn btn-outline-light rounded-pill text-uppercase is-checked"
-						data-filter=".design">Design</a>
-					<a href="#" class="btn btn-outline-light rounded-pill text-uppercase"
-						data-filter=".interior">Interior</a>
-					<a href="#" class="btn btn-outline-light rounded-pill text-uppercase"
-						data-filter=".landscape">Landscape</a>
-					<a href="#" class="btn btn-outline-light rounded-pill text-uppercase"
-						data-filter=".construction">Construction</a>
+			<section class="gallery-product" >
+				<div class="column">
+					<div class="img-wrapper" data-aos="fade-up" data-aos-delay="400">
+						<img class="gal-img lazy" data-src="https://www.litrasrl.com/wp-content/uploads/2020/06/1.jpg" alt="upl1">
+						<p class="img-text">Coperture Telescopiche Motorizzate</p>
+					  </div>
+				<p class="img-text-hover">Coperture Telescopiche Motorizzate</p>
+			  </div>
+			  <div class="column">
+				<div class="img-wrapper" data-aos="fade-up" data-aos-delay="600">
+					<img class="gal-img lazy" data-src="https://www.litrasrl.com/wp-content/uploads/2020/06/2.jpg" alt="upl2">
+					<p class="img-text">Pergole Retrattili</p>
 				</div>
-
+				<p class="img-text-hover">Pergole Retrattili</p>
 			</div>
-
-			<div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-3" data-aos="fade-up">
-				<div class="col mb-4 portfolio-item construction interior">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 1."><img src="images/portfolio-thumb-1.jpg"
-							class="img-fluid" alt="portfolio"></a>
+			<div class="column">
+				<div class="img-wrapper" data-aos="fade-up" data-aos-delay="800">
+					<img class="gal-img lazy" data-src="https://www.litrasrl.com/wp-content/uploads/2021/12/Pergola-Bioclimatica-6.jpg" alt="upl3">
+					<p class="img-text">Pergole Bioclimatiche</p>
 				</div>
-				<div class="col mb-4 portfolio-item construction construction">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 2."><img src="images/portfolio-thumb-2.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item construction">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 3."><img src="images/portfolio-thumb-11.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item construction">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 4."><img src="images/portfolio-thumb-4.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item interior">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 5."><img src="images/portfolio-thumb-5.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 6."><img src="images/portfolio-thumb-6.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 7."><img src="images/portfolio-thumb-7.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 8."><img src="images/portfolio-thumb-8.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 9."><img src="images/portfolio-thumb-9.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 0."><img src="images/portfolio-thumb-10.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 1."><img src="images/portfolio-thumb-11.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item construction">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 2."><img src="images/portfolio-thumb-2.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item interior">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 1."><img src="images/portfolio-thumb-3.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 2."><img src="images/portfolio-thumb-8.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 3."><img src="images/portfolio-thumb-1.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item interior">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 4."><img src="images/portfolio-thumb-4.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item interior">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 5."><img src="images/portfolio-thumb-5.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item interior">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 6."><img src="images/portfolio-thumb-6.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 7."><img src="images/portfolio-thumb-7.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 8."><img src="images/portfolio-thumb-8.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 0."><img src="images/portfolio-thumb-10.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item construction">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 1."><img src="images/portfolio-thumb-11.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 2."><img src="images/portfolio-thumb-1.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
+				<p class="img-text-hover">Pergole Bioclimatiche</p>
 			</div>
-
+			<a class="browse" href="#">Browse all prodotti</a>
+			</section>
+			<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+	</div>
+</section>
 		</div>
 	</section>
 
@@ -408,7 +326,7 @@
 							already subscribed us.</p>
 						<form id="form">
 							<input type="text" name="email" placeholder="enter your email address">
-							<button class="btn btn-accent btn-rounded btn-full btn-xlarge">Subscribe</button>
+							<button class="btn btn-accent btn-rounded btn-full btn-xlarge btn-var1">Subscribe</button>
 						</form>
 					</div>
 				</div>
@@ -416,7 +334,7 @@
 		</div>
 	</section>
 
-	<section id="latest-blog" class="scrollspy-section bg-grey padding-large">
+	<section id="latest-blog"  class="scrollspy-section bg-grey padding-large">
 		<div class="container">
 
 			<div class="row">
@@ -449,7 +367,7 @@
 										</a>
 									</figure>
 
-									<div class="post-content">
+									<div class="post-content" >
 										<div class="meta-date">Mar 30, 2021</div>
 										<h3 class="post-title"><a href="#">modern vibes bedrooms, todays trending
 												design</a></h3>
@@ -485,7 +403,7 @@
 											<img src="images/postimg3.jpg" alt="post" class="post-image">
 										</a>
 									</figure>
-									<div class="post-content">
+									<div class="post-content" >
 										<div class="meta-date">Mar 27, 2021</div>
 										<h3 class="post-title"><a href="#">how to make your resort that looks
 												outstanding</a></h3>
@@ -508,7 +426,7 @@
 				<div class="col">
 
 					<div class="btn-wrap align-center">
-						<a href="#" class="btn btn-xlarge btn-accent btn-rounded">View all blog</a>
+						<a href="#" class="btn btn-xlarge btn-accent btn-rounded btn-var1">View all blog</a>
 					</div>
 
 				</div>
@@ -517,7 +435,7 @@
 		</div>
 	</section>
 
-	<section id="contact" style="background-color: whitesmoke !important;" class="scrollspy-section bg-dark padding-large">
+	<section id="contact" style="background-color: rgb(173, 197, 230) !important;" class="scrollspy-section bg-dark padding-large">
 		<div class="container">
 
 			<div class="row">
@@ -550,7 +468,7 @@
 									<span>I agree to privacy policy</span>
 								</label>
 							</p>
-							<button class="btn btn-accent btn-rounded btn-xlarge btn-full">Submit</button>
+							<button class="btn btn-accent btn-rounded btn-xlarge btn-full btn-var1">Submit</button>
 						</form>
 
 

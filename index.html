@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
-	<title>Archi - Free Architecture Portfolio HTML Template</title>
+	<title data-lang="unit">Schildco</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,111 +11,76 @@
 	<meta name="author" content="TemplatesJungle">
 	<meta name="keywords" content="Free HTML Template">
 	<meta name="description" content="Free HTML Template">
-
 	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
 	<link rel="stylesheet" type="text/css" href="css/vendor.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet">
+		<script src="js/lang.js"></script>
+
 </head>
 
 <body>
 
 	<div class="preloader"></div>
-
-	<div class="nav nav-overlay">
-		<div class="nav__content">
-			<div class="container">
-				<div class="row p-4 p-md-0 flex-column-reverse flex-md-row g-md-5 nav__block">
-					<div class="col-md-5">
-						<ul class="nav__list d-none d-md-block">
-							<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a>
-							</li>
-							<li class="nav__list-item"><a href="onepage.html" class="hover-target">Onepage</a></li>
-							<li class="nav__list-item"><a href="styles.html" class="hover-target">Styles</a></li>
-							<li class="nav__list-item"><a href="blog.html" class="hover-target">Blog</a></li>
-							<li class="nav__list-item"><a href="single-post.html" class="hover-target">Single Post</a>
-							</li>
-							<li class="nav__list-item"><a href="contact.html" class="hover-target">Contact us</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4 text-white">
-						<h3 class="text-white fw-bold nav__block-item">Contact info</h3>
-						<p class="text-light nav__block-item">Officia nisi corrupti eaque cumque exercitationem labore
-							sint sapiente rem neque temporibus id ratione perspiciatis, tenetur est repellendus
-							aspernatur culpa repudiandae omnis.</p>
-						<ul class="list-unstyled text-light nav__block-item">
-							<li class="menu-item">
-								<i class="icon icon-location me-2"></i>2489 Locust Court, Los Angeles
-							</li>
-							<li class="menu-item">
-								<i class="icon icon-location2 me-2"></i>3927 Red Maple Drive, Los Angeles
-							</li>
-							<li class="menu-item">
-								<i class="icon icon-phone me-2"></i>+63 667 341 3463
-							</li>
-							<li class="menu-item">
-								<i class="icon icon-envelope-o me-2"></i><a href="#"
-									class="text-white">contact@example.com</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-3 text-white">
-						<h3 class="text-white fw-bold nav__block-item">Pages</h3>
-						<ul class="list-unstyled nav__block-item">
-							<li><a href="onepage.html" class="text-white">Onepage <span
-										class="badge bg-primary">PRO</span></a></li>
-							<li><a href="styles.html" class="text-white">Styles <span
-										class="badge bg-primary">PRO</span></a></li>
-							<li><a href="blog.html" class="text-white">Blog <span
-										class="badge bg-primary">PRO</span></a></li>
-							<li><a href="single-post.html" class="text-white">Single Post <span
-										class="badge bg-primary">PRO</span></a></li>
-							<li><a href="contact.html" class="text-white">Contact us <span
-										class="badge bg-primary">PRO</span></a></li>
-							<li><a href="portfolio-masonry.html" class="text-white">Portfolio Masonry <span
-										class="badge bg-primary">PRO</span></a></li>
-							<li><a href="portfolio-grid.html" class="text-white">Portfolio Grid <span
-										class="badge bg-primary">PRO</span></a></li>
-							<li><a href="single-portfolio.html" class="text-white">Single Portfolio <span
-										class="badge bg-primary">PRO</span></a></li>
-							<li><a href="about.html" class="text-white">About Us <span
-										class="badge bg-primary">PRO</span></a></li>
-							<li><a href="team.html" class="text-white">Our Team <span
-										class="badge bg-primary">PRO</span></a></li>
-						</ul>
-					</div>
-				</div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">⬆</button>
+	
+	<div id="header">
+		<div id="logo">LOGO</div>
+		<nav id="navbar">
+		  <a href="index.html" data-lang="navhome"><b>Home</b></a>
+		  <a href="prodotti.html" data-lang="navprod"><b>Prodotti</b></a>
+		  <a href="test3.html" data-lang="navabout"><b>About us</b></a>
+		  <div class="dropdown">
+			<a class="dropbtn" data-lang="langbtn" style="background-color: rgba(255, 255, 255, 0);">Language</a>
+			<div class="dropdown-content">
+			  <a data-btn="it" class="nav-btn-active" href="#">Italiano</a>
+			  <a data-btn="de" href="#">Deutsch</a>
 			</div>
-
+		  </div>
+		</nav>
+	</div>
+	<div class="menu-btn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	
+	<div class="side-menu">
+		<a class="text-color-my" href="index.html" data-lang="navhome"><b>Home</b></a>
+		<a class="text-color-my" href="prodotti.html" data-lang="navprod"><b>Prodotti</b></a>
+		<a class="text-color-my" href="test3.html" data-lang="navabout"><b>About us</b></a>
+		<div class="dropdown">
+		  <a class="dropbtn" data-lang="langbtn">Language</a>
+		  <div class="dropdown-content">
+			<a lang="it" data-btn="it" href="index.html" hreflang="it">Italiano</a>
+			<a data-btn="de" lang="de" href="index.html" hreflang="de">Deutsch</a>
+		  </div>
 		</div>
 	</div>
+	
+  
 
-	<div class="main-logo">
-		<a href="index.html">A.</a>
-	</div>
+	  
+	
+	
 
-	<div class="side-nav-bar">
-		<input id="menu-toggle" type="checkbox" />
-		<label class="menu-btn" for="menu-toggle">
-			<span></span>
-		</label>
-	</div>
+
 
 	<section id="intro" class="scrollspy-section">
 		<div class="main-slider">
 			<div class="slider-item jarallax" data-speed="0.2">
 				<img src="images/main-banner1.jpg" alt="banner" class="jarallax-img">
 				<div class="banner-content">
-					<h2 class="banner-title txt-fx">Modern Designs</h2>
+					<h2 class="banner-title txt-fx" data-lang="slidetext1">Modern Designs</h2>
 					<div class="btn-wrap">
-						<a href="#" class="btn-with-line">View Project</a>
+						<a href="#" class="btn-with-line" data-lang="slidetext2">View Project</a>
 					</div>
 				</div><!--banner-content-->
 			</div><!--slider-item-->
@@ -123,9 +88,9 @@
 			<div class="slider-item jarallax" data-speed="0.2">
 				<img src="images/main-banner2.jpg" alt="banner" class="jarallax-img">
 				<div class="banner-content">
-					<h2 class="banner-title txt-fx">Clean & Minimal</h2>
+					<h2 class="banner-title txt-fx" data-lang="slidetext3">Clean & Minimal</h2>
 					<div class="btn-wrap">
-						<a href="#" class="btn-with-line">View Project</a>
+						<a href="#" class="btn-with-line" data-lang="slidetext2">View Project</a>
 					</div>
 				</div><!--banner-content-->
 			</div><!--slider-item-->
@@ -133,9 +98,9 @@
 			<div class="slider-item jarallax" data-speed="0.2">
 				<img src="images/main-banner3.jpg" alt="banner" class="jarallax-img">
 				<div class="banner-content">
-					<h2 class="banner-title txt-fx">Personalize and Customize</h2>
+					<h2 class="banner-title txt-fx" data-lang="slidetext4">Personalize and Customize</h2>
 					<div class="btn-wrap">
-						<a href="#" class="btn-with-line">View Project</a>
+						<a href="#" class="btn-with-line" data-lang="slidetext2">View Project</a>
 					</div>
 				</div><!--banner-content-->
 			</div><!--slider-item-->
@@ -150,8 +115,8 @@
 			</button>
 		</div>
 	</section>
-
-	<section id="about" class="scrollspy-section padding-xlarge">
+	<p id="animated-text" data-lang="underslidetext"></p>
+	<!-- <section id="about" class="scrollspy-section padding-xlarge">
 		<div class="container">
 			<div class="row">
 
@@ -193,160 +158,58 @@
 			</div>
 
 		</div>
-	</section>
+	</section> -->
 
-	<section id="portfolio" class="scrollspy-section bg-dark padding-large">
+	<section id="" style="background-color: whitesmoke !important;" class=" bg-dark padding-large">
 		<div class="container">
 
 			<div class="row">
 				<div class="col-md-12">
 
 					<div class="section-header">
-						<div class="br-bg title">
-							<span class="br-bg">Some of Our Works</span>
+						<div class="title">
+							<span data-lang="productsubtitle">Some of Our Works</span>
 						</div>
-						<h2 class="section-title light">Our Portfolio</h2>
+						<h2 class="section-title" data-lang="producttitle">Our Products</h2>
 					</div>
 				</div>
 			</div>
 
-			<div class="row">
 
-				<div id="filters" class="button-group d-flex flex-wrap gap-4 py-5" data-aos="fade-up">
-					<a href="#" class="btn btn-outline-light rounded-pill text-uppercase is-checked"
-						data-filter=".design">Design</a>
-					<a href="#" class="btn btn-outline-light rounded-pill text-uppercase"
-						data-filter=".interior">Interior</a>
-					<a href="#" class="btn btn-outline-light rounded-pill text-uppercase"
-						data-filter=".landscape">Landscape</a>
-					<a href="#" class="btn btn-outline-light rounded-pill text-uppercase"
-						data-filter=".construction">Construction</a>
+			
+				<section class="gallery-product" >
+					<div class="column">
+						<div class="img-wrapper" data-aos="fade-up" data-aos-delay="400">
+							<img class="gal-img lazy" data-src="https://www.litrasrl.com/wp-content/uploads/2020/06/1.jpg" alt="upl1">
+							<p class="img-text" data-lang="imgsubtext1">Coperture Telescopiche Motorizzate</p>
+						  </div>
+					<p class="img-text-hover" data-lang="imgsubtext1">Coperture Telescopiche Motorizzate</p>
+				  </div>
+				  <div class="column">
+					<div class="img-wrapper" data-aos="fade-up" data-aos-delay="600">
+						<img class="gal-img lazy" data-src="https://www.litrasrl.com/wp-content/uploads/2020/06/2.jpg" alt="upl2">
+						<p class="img-text" data-lang="imgsubtext2">Pergole Retrattili</p>
+					</div>
+					<p class="img-text-hover" data-lang="imgsubtext2">Pergole Retrattili</p>
 				</div>
-
-			</div>
-
-			<div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-3" data-aos="fade-up">
-				<div class="col mb-4 portfolio-item construction interior">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 1."><img src="images/portfolio-thumb-1.jpg"
-							class="img-fluid" alt="portfolio"></a>
+				<div class="column">
+					<div class="img-wrapper" data-aos="fade-up" data-aos-delay="800">
+						<img class="gal-img lazy" data-src="https://www.litrasrl.com/wp-content/uploads/2021/12/Pergola-Bioclimatica-6.jpg" alt="upl3">
+						<p class="img-text" data-lang="imgsubtext3">Pergole Bioclimatiche</p>
+					</div>
+					<p class="img-text-hover" data-lang="imgsubtext3">Pergole Bioclimatiche</p>
 				</div>
-				<div class="col mb-4 portfolio-item construction construction">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 2."><img src="images/portfolio-thumb-2.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item construction">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 3."><img src="images/portfolio-thumb-11.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item construction">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 4."><img src="images/portfolio-thumb-4.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item interior">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 5."><img src="images/portfolio-thumb-5.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 6."><img src="images/portfolio-thumb-6.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 7."><img src="images/portfolio-thumb-7.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 8."><img src="images/portfolio-thumb-8.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 9."><img src="images/portfolio-thumb-9.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 0."><img src="images/portfolio-thumb-10.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 1."><img src="images/portfolio-thumb-11.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item construction">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 2."><img src="images/portfolio-thumb-2.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item interior">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 1."><img src="images/portfolio-thumb-3.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 2."><img src="images/portfolio-thumb-8.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 3."><img src="images/portfolio-thumb-1.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item interior">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 4."><img src="images/portfolio-thumb-4.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item interior">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 5."><img src="images/portfolio-thumb-5.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item interior">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 6."><img src="images/portfolio-thumb-6.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 7."><img src="images/portfolio-thumb-7.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 8."><img src="images/portfolio-thumb-8.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 0."><img src="images/portfolio-thumb-10.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item construction">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 1."><img src="images/portfolio-thumb-11.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item landscape">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item1 2."><img src="images/portfolio-thumb-1.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-			</div>
-
+				<a class="browse" href="#" data-lang="imgsubtext4">Browse all prodotti</a>
+				</section>
+				<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 		</div>
 	</section>
+	
 
-	<section id="services" class="scrollspy-section padding-large">
+	<!-- <section id="services" class="scrollspy-section padding-large">
 		<div class="container">
 			<div class="row">
 				<div class="section-header col-12">
@@ -363,7 +226,7 @@
 				<div class="col-md-4">
 					<div class="services-item">
 						<span class="number">01</span>
-						<h3>Architecture Portfolio</h3>
+						<h3 class="text-color-my">Architecture Portfolio</h3>
 						<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui.
 						</p>
 					</div>
@@ -372,7 +235,7 @@
 				<div class="col-md-4">
 					<div class="services-item">
 						<span class="number">02</span>
-						<h3>Planning Process</h3>
+						<h3 class="text-color-my">Planning Process</h3>
 						<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui.
 						</p>
 					</div>
@@ -382,7 +245,7 @@
 				<div class="col-md-4">
 					<div class="services-item">
 						<span class="number">03</span>
-						<h3>Unique Design</h3>
+						<h3 class="text-color-my">Unique Design</h3>
 						<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui.
 						</p>
 					</div>
@@ -391,7 +254,7 @@
 			</div>
 
 		</div>
-	</section>
+	</section> -->
 
 	<section id="subscribe" class="scrollspy-section padding-small">
 		<div class="container">
@@ -403,12 +266,12 @@
 				</div>
 				<div class="col-md-6">
 					<div class="subscribe-content">
-						<h2 class="section-title">subscribe us</h2>
-						<p>Join our newsletter to stay updated with super discounts and amazing offers. 300+ have
+						<h2 class="section-title" data-lang="subustitle">subscribe us</h2>
+						<p data-lang="subustext">Join our newsletter to stay updated with super discounts and amazing offers. 300+ have
 							already subscribed us.</p>
 						<form id="form">
-							<input type="text" name="email" placeholder="enter your email address">
-							<button class="btn btn-accent btn-rounded btn-full btn-xlarge">Subscribe</button>
+							<input type="text" name="email" data-lang="subusplacehold" placeholder="enter your email address">
+							<button class="btn btn-accent btn-rounded btn-full btn-xlarge" data-lang="subusbtn">Subscribe</button>
 						</form>
 					</div>
 				</div>
@@ -451,7 +314,7 @@
 
 									<div class="post-content">
 										<div class="meta-date">Mar 30, 2021</div>
-										<h3 class="post-title"><a href="#">modern vibes bedrooms, todays trending
+										<h3 class="post-title text-color-my"><a href="#">modern vibes bedrooms, todays trending
 												design</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis
 											nulla blandit dui.</p>
@@ -470,7 +333,7 @@
 									</figure>
 									<div class="post-content">
 										<div class="meta-date">Mar 29, 2021</div>
-										<h3 class="post-title"><a href="#">How to make minimalist living rooms
+										<h3 class="post-title text-color-my"><a href="#">How to make minimalist living rooms
 												pop-out</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis
 											nulla blandit dui.</p>
@@ -487,7 +350,7 @@
 									</figure>
 									<div class="post-content">
 										<div class="meta-date">Mar 27, 2021</div>
-										<h3 class="post-title"><a href="#">how to make your resort that looks
+										<h3 class="post-title text-color-my"><a href="#">how to make your resort that looks
 												outstanding</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis
 											nulla blandit dui.</p>
@@ -517,7 +380,7 @@
 		</div>
 	</section>
 
-	<section id="contact" class="scrollspy-section bg-dark padding-large">
+	<!-- <section id="contact" style="background-color: whitesmoke !important;" class="scrollspy-section bg-dark padding-large">
 		<div class="container">
 
 			<div class="row">
@@ -526,10 +389,10 @@
 					<div class="left-content">
 
 						<div class="section-header">
-							<div class=" br-bg title">
-								<span class="br-bg">Get in touch</span>
+							<div class="title">
+								<span class="">Get in touch</span>
 							</div>
-							<h2 class="section-title light">Contact us</h2>
+							<h2 class="section-title">Contact us</h2>
 						</div>
 
 						<p>If you have any question about our process or company? Let us know how we can help you.</p>
@@ -556,7 +419,7 @@
 
 					</div>
 
-				</div><!--left-content-->
+				</div>
 
 				<div class="col-md-6">
 					<div class="right-content">
@@ -591,14 +454,14 @@
 						</div>
 
 					</div>
-				</div><!--right-content-->
+				</div>
 
 			</div>
 
 		</div>
-	</section>
+	</section> -->
 
-	<section id="testimonial" class="padding-large">
+	<!-- <section id="testimonial" class="padding-large">
 		<div class="container">
 
 			<div class="row">
@@ -630,13 +493,13 @@
 								</div>
 							</div>
 						</div>
-					</div><!--reviews-content-->
+					</div>
 
 				</div>
-			</div><!--grid-->
+			</div>
 
 		</div>
-	</section>
+	</section> -->
 
 	<footer id="footer">
 		<div class="container">
@@ -671,7 +534,7 @@
 				<div class="col-md-2">
 
 					<div class="footer-menu menu-item-02">
-						<h5>quick links</h5>
+						<h5 class="text-color-my">quick links</h5>
 						<ul class="menu-list">
 							<li class="menu-item">
 								<a href="#">home</a>
@@ -699,7 +562,7 @@
 				<div class="col-md-4">
 
 					<div class="footer-menu menu-item-03">
-						<h5>contact info</h5>
+						<h5 class="text-color-my">contact info</h5>
 						<ul class="menu-list">
 							<li class="menu-item">
 								<i class="icon icon-location"></i>2489 Locust Court, Los Angeles
@@ -721,7 +584,7 @@
 				<div class="col-md-3">
 
 					<div class="footer-menu menu-item-04">
-						<h5>gallery</h5>
+						<h5 class="text-color-my">gallery</h5>
 						<div class="gallery">
 							<a href="images/spacejoy.jpg" data-lightbox-gallery="gallery1"
 								title="Calm Before The Storm (One Shoe Photography Ltd.)" class="image-link"><img
@@ -755,15 +618,10 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="copyright">
-						<p>© 2022 Archi. All rights reserved.</p>
+						<p>© 2024 Schildco. All rights reserved.</p>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="copyright text-right">
-						<p>HTML Template by <a href="https://www.templatesjungle.com/"
-								target="_blank">TemplatesJungle</a></p>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -776,6 +634,8 @@
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/lang.js"></script>
+
 
 </body>
 
