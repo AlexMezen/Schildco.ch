@@ -286,9 +286,16 @@ menuBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("active");
 });
 const allLangs = ["it", "de"];
-let currentLang = localStorage.getItem("language") || "de";
+
 const langButtons = document.querySelectorAll("[data-btn]");
 const currentPathName = window.location.pathname;
+
+const locationLang = window.location.href.slice(window.location.href.length - 2, window.location.href.length);
+
+if (locationLang === 'de' || locationLang === 'it')  currentLang = locationLang
+else if(localStorage.getItem("language")) currentLang = localStorage.getItem("language")
+else currentLang = 'de'
+
 let currentText = {};
 function checkPagePathName() {
   switch (currentPathName) {
@@ -307,6 +314,7 @@ function checkPagePathName() {
   }
 }
 checkPagePathName();
+
 function changeLang() {
   for (let key in currentText) {
     let element = document.querySelector(`[data-lang=${key}]`);
@@ -315,7 +323,9 @@ function changeLang() {
     }
   }
 }
+
 changeLang();
+
 langButtons.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     currentLang = event.target.dataset.btn;
@@ -325,6 +335,7 @@ langButtons.forEach((btn) => {
     changeLang();
   });
 });
+
 function resetActiveLangClass(arr, activeClass) {
   arr.forEach((elem) => {
     elem.classList.remove(activeClass);
